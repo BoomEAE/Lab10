@@ -8,6 +8,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+//Github repo link: https://github.com/BoomEAE/Lab10.git
+
 /**
  * JavaFX App
  */
@@ -17,8 +19,9 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("MainView"), 640, 480);
+        scene = new Scene(loadFXML("MainView"), Integer.MIN_VALUE, Integer.MIN_VALUE);
         stage.setScene(scene);
+        stage.setTitle("Menu");
         stage.show();
     }
 
